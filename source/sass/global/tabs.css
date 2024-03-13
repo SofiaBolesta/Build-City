@@ -1,0 +1,87 @@
+.tabs {
+  max-width: 100%;
+}
+
+.tabs__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .tabs__controls {
+    flex-wrap: wrap;
+  }
+}
+
+.tabs__control {
+  text-transform: inherit;
+  cursor: pointer;
+  margin: 0;
+  opacity: 1;
+  min-width: auto;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .tabs__control {
+    margin: 0 10px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tabs__control {
+    margin: 10px 2% 0;
+    padding: 10px;
+    width: 35%;
+  }
+}
+.tabs__control.is-active {
+  box-sizing: border-box;
+  border: 3px solid #ffcd6c;
+  background: #ffcd6c;
+  pointer-events: none;
+  color: #071015;
+}
+
+.tabs__content {
+  margin-bottom: 40px;
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  padding: 25px;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .tabs__element {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tabs__element {
+    padding: 15px;
+  }
+}
+.tabs__element p {
+  margin: 0;
+}
+.tabs__element p:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.tabs__element:nth-child(4) {
+  padding: 0 40px;
+  border: none;
+}
+
+.tabs--unset .tabs__content {
+  height: 100%;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=tabs.css.map */

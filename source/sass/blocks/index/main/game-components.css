@@ -1,0 +1,25 @@
+.game-components {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto 180px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 2;
+  padding: 0 50px;
+}
+
+.game-components__card {
+  order: 3;
+}
+
+.game-components__calculate {
+  order: 1;
+}
+
+.game-components__dice {
+  order: 2;
+}
+
+/*# sourceMappingURL=game-components.css.map */

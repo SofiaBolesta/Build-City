@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Строй-City</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header">
+        <div class="header__wrapper">
+          <div class="header__container-menu-game">
+            <a href="index.html" class="header__logotype">
+              <picture class="header__picture-logotype">
+                <img src="img/svg/logotype.svg" width="339" height="200" alt="Логотип игры Строй-City">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Страница "Игры 10 на 10" сайта Строй-City</h1>
+      <section class="breadcrumbs">
+        <div class="breadcrumbs__wrapper">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--arrow">
+              <svg viewBox="0 0 42 27" width="41.33" height="26.64" aria-hidden="true" focusable="false">
+                <use xlink:href="img/sprite/sprite.svg#icon-breadcrumbs"></use>
+              </svg>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">
+              <a href="#" class="breadcrumbs__link">Игра 10 x 10</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="game-components">
+        <section class="game-components__card card"  id="textGenerator">
+          <h2 class="visually-hidden">Карточки для игры</h2>
+          <div class="card__wrapper">
+            <button class="card__button" id="generateButton">Сгенерировать текст</button>
+            <div class="card__content">
+              <h3 class="card__title">Государственный контроль качества</h3>
+              <div class="card__text" id="textContainer"></div>
+            </div>
+          </div>
+        </section>
+        <section class="game-components__calculate calculate" id="calculator">
+          <h2 class="visually-hidden">Калькулятор</h2>
+          <div class="calculate__wrapper">
+            <div class="calculate__content">
+              <label class="visually-hidden" for="inputField">Результат:</label>
+              <input type="text" id="inputField" placeholder="Результат" readonly>
+              <div class="calculate__button">
+                <button id="btnClear">C</button>
+                <button id="btnPlus">+</button>
+                <button id="btnMinus">-</button>
+                <button id="btn1">1</button>
+                <button id="btn2">2</button>
+                <button id="btn3">3</button>
+                <button id="btn4">4</button>
+                <button id="btn5">5</button>
+                <button id="btn6">6</button>
+                <button id="btn7">7</button>
+                <button id="btn8">8</button>
+                <button id="btn9">9</button>
+                <button id="btn0">0</button>
+                <button id="btnEqual">=</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="game-components__dice dice">
+          <h2 class="visually-hidden">Кубики для игры</h2>
+          <div class="dice__wrapper">
+            <button id="rollButton">Кинуть кубики</button>
+            <div class="dice__content-button">
+              <div class="dice__button" id="dice1"></div>
+              <div class="dice__button" id="dice2"></div>
+            </div>
+            <div class="visually-hidden" id="numSidesValue">10</div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__wrapper">
+          <a href="index.html" class="footer__logotype-link">
+            <picture class="footer__picture">
+              <img src="img/svg/logotype.svg" width="339" height="200" alt="Логотип компании Строй-Sity">
+            </picture>
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="about-game.html" class="footer__link">Об игре</a>
+            </li>
+            <li class="footer__item">
+              <a href="index.html" class="footer__link">Руководство по игре</a>
+            </li>
+            <li class="footer__item">
+              <a href="index.html" class="footer__link">Начать игру</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

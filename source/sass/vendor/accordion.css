@@ -1,0 +1,26 @@
+.accordion {
+  margin: 0 auto 50px auto;
+}
+.accordion .accordion {
+  margin: 0 auto;
+}
+.accordion__element:last-child {
+  margin-bottom: 0;
+}
+.accordion__element {
+  margin-bottom: 34px;
+}
+.accordion__element.is-active > .accordion__button {
+  /*box-shadow: -2px 4px 4px  inset;*/
+  box-shadow: 0 7px 15px -9px #117e7e inset;
+}
+.accordion__button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.accordion__wrapper {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=accordion.css.map */

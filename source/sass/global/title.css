@@ -1,0 +1,29 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 28 | /   @include vp-1023 {
+ * 29 | |     font-size: clamp(1.87rem, 1.42rem + 1.19vw, 2.5rem);/*30px*∕
+ * 30 | |     padding: 20px 100px 15px 88px;
+ * 31 | |     margin: 0 0 40px;
+ * 32 | |     border-bottom: 5px solid transparent;
+ * 33 | | 
+ * 34 | |     &::before {
+ * 35 | |       left: 34px;
+ * 36 | |       top: 15px;
+ * 37 | |       width: 43px;
+ * 38 | |       height: 43px;
+ * 39 | |       background: url("../img/svg/title-tablet.svg") center no-repeat;
+ * 40 | |     }
+ * 41 | \   }
+ *    '
+ *   title.scss 28:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined mixin.\a    \2577 \a 28 \2502  \250c    @include vp-1023 {\a 29 \2502  \2502      font-size: clamp(1.87rem, 1.42rem + 1.19vw, 2.5rem);/*30px*/\a 30 \2502  \2502      padding: 20px 100px 15px 88px;\a 31 \2502  \2502      margin: 0 0 40px;\a 32 \2502  \2502      border-bottom: 5px solid transparent;\a 33 \2502  \2502  \a 34 \2502  \2502      &::before {\a 35 \2502  \2502        left: 34px;\a 36 \2502  \2502        top: 15px;\a 37 \2502  \2502        width: 43px;\a 38 \2502  \2502        height: 43px;\a 39 \2502  \2502        background: url("../img/svg/title-tablet.svg") center no-repeat;\a 40 \2502  \2502      }\a 41 \2502  \2514    }\a    \2575 \a   title.scss 28:3  root stylesheet';
+}

@@ -1,0 +1,39 @@
+.game-components {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto 180px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 2;
+  padding: 0 50px;
+  gap: 50px;
+
+  @include vp-1439 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include vp-1023 {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+.game-components__card {
+  order: 3;
+}
+
+.game-components__calculate {
+  order: 1;
+}
+
+.game-components__dice {
+  order: 2;
+}

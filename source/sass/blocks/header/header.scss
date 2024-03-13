@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  margin: 0;
+  background-color: #080f13;
+}
+
+.header__wrapper {
+  max-width: 1610px;
+  margin: 0 auto;
+}
+
+.header__container-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+
+  @include vp-1023 {
+    padding: 20px 30px;
+  }
+}
+
+.header__container-menu-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.header__logotype {
+  display: block;
+
+  &:hover,
+  &:active {
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+  }
+
+  @include vp-1279 {
+    width: 230px;
+  }
+
+  @include vp-1023 {
+    width: 180px;
+  }
+
+  @include vp-767 {
+    width: 130px;
+    min-width: 100px;
+  }
+}

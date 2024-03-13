@@ -1,0 +1,124 @@
+.promo {
+  width: 100%;
+  margin-bottom: 140px;
+}
+
+.promo__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  grid-template-rows: minmax(auto, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.promo__video {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  width: 100%;
+  background-color: #080f13;
+}
+
+.promo__video--border {
+  border: 6px solid #ffcd6c;
+}
+
+.promo__content {
+  grid-column: 1;
+  grid-row: 1/-1;
+  box-sizing: border-box;
+  border: 3px solid #ffcd6c;
+  background: linear-gradient(90.00deg, rgba(#101a23, 1) 46.73%, rgba(#252e36, 0.9) 69.84%, rgba(#3e464d, 0.77) 86.75%, rgba(#4e555b, 0.69) 100.28%);
+  max-width: 90%;
+  padding: 40px;
+  margin: 0 40px;
+
+  @include vp-1439 {
+    max-width: 100%;
+  }
+
+  @include vp-1279 {
+    padding: 20px;
+    margin: 0 20px;
+  }
+
+  @include vp-1023 {
+    padding: 15px;
+    margin: 0 10px 0 40px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    padding: 10px;
+    margin: 0 30px;
+    grid-column: 1/-1;
+    background: rgba(#071015, 70%);
+    animation-name: promo-offset;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+
+    @keyframes promo-offset {
+      0% {
+        left: -120%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+  }
+}
+
+.promo__content h2 {
+  color: #ffffff;
+  font-size: clamp(3.43rem, 2.08rem + 22.85vw, 3.93rem);
+  font-weight: 400;
+  line-height: 112px;
+  text-align: center;
+  margin: 0;
+
+  @include vp-1439 {
+    font-size: clamp(2.81rem, 1.11rem + 28.57vw, 3.43rem);
+    line-height: 90px;
+  }
+
+  @include vp-1279 {
+    font-size: clamp(2.5rem, 1.65rem + 14.28vw, 2.81rem);
+    line-height: 60px;
+  }
+
+  @include vp-1023 {
+    font-size: clamp(1.87rem, 0.17rem + 28.57vw, 2.5rem);
+    line-height: 40px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1.43rem, 1.09rem + 5.71vw, 1.56rem);
+    line-height: 30px;
+  }
+}
+
+.promo__content p {
+  color: #ffffff;
+  font-size: clamp(1.87rem, 0.68rem + 20vw, 2.31rem);
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 1px;
+  text-align: center;
+
+  @include vp-1279 {
+    font-size: clamp(1.56rem, 0.71rem + 14.28vw, 1.87rem);
+  }
+
+  @include vp-1023 {
+    font-size: clamp(1.25rem, 0.4rem + 14.28vw, 1.56rem);
+    line-height: 25px;
+    margin: 20px 0 0;
+  }
+
+  @include vp-767 {
+    font-size: clamp(0.87rem, 0.02rem + 14.28vw, 1.18rem);
+    line-height: 20px;
+    margin: 10px 0 0;
+  }
+}
