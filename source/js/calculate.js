@@ -4,7 +4,7 @@ export function initializeCalculator() {
   const generateButton = document.getElementById('generateButton');
   const rollButton = document.getElementById('rollButton');// Предположим, что у нас есть кнопка с идентификатором 'exceptButton'
 
-  const buttons = Array.from(calculatorAllButtons).filter(button => button !== generateButton && button !== rollButton);
+  const buttons = Array.from(calculatorAllButtons).filter((button) => button !== generateButton && button !== rollButton);
 
   buttons.forEach(function (button) {
     button.addEventListener('click', function () {

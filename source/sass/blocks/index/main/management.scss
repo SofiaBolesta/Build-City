@@ -90,7 +90,7 @@
   }
 
   @include vp-767 {
-    font-size: clamp(1.18rem, 1.00rem + 0.47vw, 1.43rem);
+    font-size: clamp(1.18rem, 1rem + 0.47vw, 1.43rem);
     line-height: 25px;
     width: 100%;
   }
@@ -127,7 +127,7 @@
   }
 
   @include vp-767 {
-    font-size: clamp(0.93rem, 0.80rem + 0.35vw, 1.12rem);
+    font-size: clamp(0.93rem, 0.8rem + 0.35vw, 1.12rem);
     line-height: 23px;
   }
 }
@@ -139,7 +139,7 @@
 .management__swiper-pagination .swiper-pagination-bullet-active-prev,
 .management__swiper-pagination .swiper-pagination-bullet-active-next {
   background-color: #ffcd6c;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .management__container-swiper {
@@ -161,4 +161,168 @@
   @include vp-767 {
     font-size: 50px;
   }
+}
+
+.management__span {
+  display: inline-block;
+  color: #ffcd6c;
+  font-size: clamp(2.18rem, 1.83rem + 0.95vw, 2.68rem);
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 0 10px;
+  margin: 0;
+
+  @include vp-1279 {
+    font-size: clamp(1.87rem, 1.65rem + 0.59vw, 2.18rem);
+    line-height: 35px;
+  }
+
+  @include vp-1023 {
+    font-size: clamp(1.56rem, 1.33rem + 0.59vw, 1.87rem);
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1.18rem, 1rem + 0.47vw, 1.43rem);
+    line-height: 25px;
+    width: 100%;
+  }
+}
+
+.management__list li {
+  color: #ffffff;
+  font-size: clamp(1.25rem, 0.93rem + 0.83vw, 1.68rem);
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-align: left;
+
+  @include vp-1023 {
+    font-size: clamp(1.12rem, 1.03rem + 0.23vw, 1.25rem);
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(0.93rem, 0.8rem + 0.35vw, 1.12rem);
+    line-height: 23px;
+  }
+}
+
+.management__span-description-tablet {
+  display: block;
+  color: #ffffff;
+  font-size: clamp(2rem, 1.65rem + 0.59vw, 2.18rem);
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 1.5px;
+  padding: 5px 5px 25px;
+  margin: 0;
+
+  @include vp-1279 {
+    font-size: clamp(1.56rem, 1.33rem + 0.59vw, 1.87rem);
+    line-height: 35px;
+  }
+
+  @include vp-1023 {
+    font-size: clamp(1.18rem, 1.00rem + 0.47vw, 1.43rem);
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1rem, 0.6rem + 0.4vw, 1.22rem);
+    line-height: 25px;
+    width: 100%;
+  }
+}
+
+.management__strong-important {
+  display: inline-block;
+  color: #ffffff;
+  font-size: clamp(2rem, 1.65rem + 0.59vw, 2.18rem);
+  font-weight: 800;
+  line-height: 35px;
+  letter-spacing: 1.5px;
+  padding: 10px 0 0;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include vp-1279 {
+    font-size: clamp(1.56rem, 1.33rem + 0.59vw, 1.87rem);
+    line-height: 35px;
+  }
+
+  @include vp-1023 {
+    font-size: clamp(1.18rem, 1.00rem + 0.47vw, 1.43rem);
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1rem, 0.6rem + 0.4vw, 1.22rem);
+    line-height: 25px;
+    width: 100%;
+  }
+}
+
+.management__link {
+  display: inline-block;
+  color: #ffcd6c;
+  font-size: clamp(1.18rem, 0.83rem + 0.45vw, 1.68rem);
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #ffcd6c;
+
+  @include vp-1279 {
+    font-size: clamp(1.87rem, 1.65rem + 0.59vw, 2.18rem);
+    line-height: 35px;
+  }
+
+  @include vp-1023 {
+    font-size: clamp(1.56rem, 1.33rem + 0.59vw, 1.87rem);
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1.18rem, 1rem + 0.47vw, 1.43rem);
+    line-height: 25px;
+    width: 100%;
+  }
+}
+
+.management__list-rules {
+  color: #ffcd6c;
+  font-size: clamp(1.87rem, 1.65rem + 0.59vw, 2.18rem);
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin: 5px 0;
+
+  @include vp-1023 {
+    font-size: clamp(1.56rem, 1.33rem + 0.59vw, 1.87rem);
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1.18rem, 1rem + 0.47vw, 1.43rem);
+    line-height: 25px;
+    width: 100%;
+  }
+}
+
+.management__content-text {
+  padding: 0 0 0 20px;
+}
+
+.management__content-text strong {
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 15px #ffffff;
 }

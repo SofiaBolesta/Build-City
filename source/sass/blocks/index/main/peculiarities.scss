@@ -64,7 +64,7 @@
   text-align: left;
 
   @include vp-1023 {
-    font-size: clamp(1.68rem, 1.50rem + 0.47vw, 1.93rem);/*26-31*/
+    font-size: clamp(1.68rem, 1.5rem + 0.47vw, 1.93rem);/*26-31*/
     margin: 0;
   }
 

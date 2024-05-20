@@ -30,18 +30,18 @@
   background-color: #071015;
   margin: 0;
   color: #ffffff;
-  font-size: clamp(1.875rem, 1.652rem + 0.595vw, 2.188rem);/*30-35*/
+  font-size: clamp(1.87rem, 1.65rem + 0.59vw, 2.18rem);/*30-35*/
   font-weight: 400;
   line-height: 41px;
   letter-spacing: 1px;
   text-align: left;
 
   @include vp-1023 {
-    font-size: clamp(1.563rem, 1.339rem + 0.595vw, 1.875rem);/*25-30*/
+    font-size: clamp(1.56rem, 1.33rem + 0.59vw, 1.87rem);/*25-30*/
   }
 
   @include vp-767 {
-    font-size: clamp(1.25rem, 1.027rem + 0.595vw, 1.563rem);/*20-25*/
+    font-size: clamp(1.25rem, 1.02rem + 0.59vw, 1.56rem);/*20-25*/
     letter-spacing: .5px;
     line-height: 31px;
   }
@@ -93,7 +93,7 @@
 
   @include vp-767 {
     font-size: clamp(1.25rem, 1.02rem + 0.59vw, 1.56rem);/*20-25*/
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     line-height: 27px;
   }
 }

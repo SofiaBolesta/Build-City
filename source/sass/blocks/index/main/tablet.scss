@@ -1,0 +1,84 @@
+.tablet {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid #ffcd6c;
+}
+
+.tablet__thead-tr th {
+  color: #ffffff;
+  font-size: clamp(1.87rem, 1.65rem + 0.59vw, 2.18rem);
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 1px;
+  padding: 5px 5px;
+  margin: 0;
+  border-collapse: collapse;
+  border: 2px solid #ffcd6c;
+
+  @include vp-1279 {
+    font-size: clamp(1.56rem, 1.33rem + 0.59vw, 1.87rem);
+    line-height: 35px;
+  }
+
+  @include vp-1023 {
+    font-size: clamp(1.18rem, 1rem + 0.47vw, 1.43rem);
+    line-height: 30px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(1rem, 0.6rem + 0.4vw, 1.22rem);
+    line-height: 25px;
+    width: 100%;
+  }
+}
+
+.tablet__tbody tr,
+.tablet__tbody td {
+  border-collapse: collapse;
+  border: 2px solid #ffcd6c;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 0.93rem + 0.83vw, 1.68rem);
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 5px;
+
+  @include vp-1023 {
+    font-size: clamp(1.12rem, 1.03rem + 0.23vw, 1.25rem);
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(0.93rem, 0.8rem + 0.35vw, 1.12rem);
+    line-height: 23px;
+  }
+}
+
+.tablet__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tablet__list li {
+  text-align: center;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 0.93rem + 0.83vw, 1.68rem);
+  line-height: 35px;
+  letter-spacing: 1px;
+
+  @include vp-1023 {
+    font-size: clamp(1.12rem, 1.03rem + 0.23vw, 1.25rem);
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: clamp(0.93rem, 0.8rem + 0.35vw, 1.12rem);
+    line-height: 23px;
+  }
+}
+
+.tablet__list li:not(:last-child) {
+  border-bottom: 2px solid #ffcd6c;
+}

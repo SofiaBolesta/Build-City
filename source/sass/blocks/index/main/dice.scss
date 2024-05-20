@@ -1,5 +1,5 @@
 .dice__wrapper {
- max-width: 400px;
+  max-width: 400px;
 }
 
 #rollButton {
@@ -32,7 +32,7 @@
   font-size: 71px;
   font-weight: 700;
   line-height: 68px;
-  -webkit-text-stroke: .5px #ffcd6c;
+  -webkit-text-stroke: 0.5px #ffcd6c;
 }
 
 .dice__content-button {
@@ -42,4 +42,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 64px;
+}
+
+#dice1 {
+  background-color: #ffffff;
+  color: #080f13;
+  -webkit-text-stroke: 0.5px #080f13;
 }

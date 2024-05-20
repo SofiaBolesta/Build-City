@@ -5,6 +5,9 @@ import {initializeCalculator} from './calculate';
 import {rollDiceSix} from './dice';
 import {initMenuIndexScroll} from './initMenuIndexScroll';
 import {initMenuAboutGameScroll} from './initMenuAboutGameScroll';
+import {initTabsScrollBargaining} from './initTabsScrollBargaining';
+import {initTabsScrollPreparation} from './initTabsScrollPreparation';
+import {initTabsScrollCredit} from './initTabsScrollCredit';
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
@@ -28,6 +31,9 @@ window.addEventListener('DOMContentLoaded', () => {
   initManagementSwiper();
   initMenuIndexScroll();
   initMenuAboutGameScroll();
+  initTabsScrollBargaining();
+  initTabsScrollPreparation();
+  initTabsScrollCredit();
 
   window.addEventListener('load', () => {
     initTabs();

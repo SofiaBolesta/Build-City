@@ -81,7 +81,7 @@
   &:active {
     background-color: #ffcd6c;
     color: #071015;
-    transition: background .3s cubic-bezier(0,.22,.77,.18), color .3s cubic-bezier(0,.22,.77,.18);
+    transition: background 0.3s cubic-bezier(0, 0.22, 0.77, 0.18), color 0.3s cubic-bezier(0, 0.22, 0.77, 0.18);
   }
 
   &:focus {
@@ -103,5 +103,5 @@
 }
 
 .order__content-gradient {
-  background: linear-gradient(90.00deg, #bb11a4, #8e1190 51%, #581179 100%);
+  background: linear-gradient(90deg, #bb11a4, #8e1190 51%, #581179 100%);
 }

@@ -5,7 +5,7 @@
 }
 
 .rules__wrapper {
-  max-width: 1700px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 50px;
 
@@ -22,6 +22,7 @@
   font-size: clamp(2.5rem, 2.27rem + 0.59vw, 2.81rem);
   margin: 0 0 45px;
   padding: 0 0 0 10px;
+  text-align: center;
 
   @include vp-1023 {
     font-size: clamp(1.87rem, 1.65rem + 0.59vw, 2.18rem);
@@ -38,30 +39,62 @@
 
 .rules__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0;
   margin: 0;
-  list-style-type: square;
+  list-style-type: none;
+
+  @include vp-1279 {
+    justify-content: center;
+  }
 
   @include vp-1023 {
-    gap: 20px;
+    gap: 15px;
   }
 
   @include vp-767 {
-    gap: 15px;
+    gap: 10px;
   }
 }
 
 .rules__item {
-  font-size: clamp(1.75rem, 1.48rem + 0.71vw, 2.12rem);
+  border: 3px solid #ffcd6c;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.rules__title-card h4 {
+  margin: 10px;
+  text-align: center;
+  font-size: clamp(1.43rem, 1.25rem + 0.47vw, 1.68rem);
 
   @include vp-1023 {
-    font-size: clamp(1.37rem, 1.15rem + 0.59vw, 1.68rem);
+    font-size: clamp(1.25rem, 1.11rem + 0.35vw, 1.43rem);
   }
 
   @include vp-767 {
-    font-size: clamp(1.06rem, 0.88rem + 0.47vw, 1.31rem);
+    font-size: clamp(1rem, 0.91rem + 0.23vw, 1.12rem);
+  }
+}
+
+.rules__item p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  font-size: clamp(1.25rem, 1.11rem + 0.35vw, 1.43rem);
+
+  @include vp-1023 {
+    font-size: clamp(1.12rem, 1.03rem + 0.23vw, 1.25rem);
+  }
+
+  @include vp-767 {
+    font-size: clamp(1rem, 0.91rem + 0.23vw, 1.12rem);
   }
 }

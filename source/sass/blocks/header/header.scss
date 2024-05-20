@@ -35,7 +35,7 @@
   &:hover,
   &:active {
     transform: scale(1.1);
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 
   @include vp-1279 {
