@@ -3080,6 +3080,19 @@ button,
   }
 }
 
+.rules__span-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .peculiarities {
   width: 100%;
   margin-bottom: 100px;
